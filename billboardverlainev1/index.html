@@ -195,9 +195,54 @@ footer{background:#111;color:#8a8a8a;padding:48px 0;text-align:center}
   .voice-flow{flex-direction:column}
   .varrow{transform:rotate(90deg)}
 }
+
+/* gate (mot de passe) */
+.gate{position:fixed;inset:0;z-index:1000;background:linear-gradient(150deg,#1A1A1A,#2C2C2C);display:flex;align-items:center;justify-content:center;padding:24px}
+.gate-card{width:100%;max-width:380px;background:var(--cream);border:1px solid var(--border);border-radius:18px;padding:38px 34px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.gate-logo{height:42px;width:auto;margin:0 auto 22px}
+.gate-fb{display:none;font-family:var(--fd);font-weight:700;font-size:30px;color:var(--terra);margin-bottom:22px}
+.gate-t{font-family:var(--fd);font-size:22px;font-weight:700;margin-bottom:6px}
+.gate-s{font-size:13px;color:var(--wg);margin-bottom:24px;line-height:1.55}
+.gate-form{display:flex;flex-direction:column;gap:12px}
+.gate-input{font-family:var(--fb);font-size:15px;padding:13px 16px;border:1px solid var(--border);border-radius:11px;background:var(--white);color:var(--char);outline:none;text-align:center;letter-spacing:.5px}
+.gate-input:focus{border-color:var(--terra)}
+.gate-btn{font-family:var(--fb);font-size:14px;font-weight:700;letter-spacing:.5px;color:#fff;background:var(--terra);border:none;border-radius:11px;padding:13px 16px;cursor:pointer;transition:background .2s}
+.gate-btn:hover{background:var(--terra-dk)}
+.gate-err{font-size:12.5px;color:#C0392B;min-height:16px;font-weight:600}
+.gate-foot{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--wg);margin-top:22px}
+body.gate-open{overflow:hidden}
 </style>
 </head>
-<body>
+<body class="gate-open">
+
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <img class="gate-logo" src="media/nara-logo.png" alt="NARA" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <div class="gate-fb">NARA</div>
+    <div class="gate-t">Document confidentiel</div>
+    <div class="gate-s">Note d'intention · Groupe Verlaine × NARA.<br>Saisissez le mot de passe pour accéder.</div>
+    <form class="gate-form" id="gateForm" autocomplete="off">
+      <input class="gate-input" id="gateInput" type="password" placeholder="Mot de passe" aria-label="Mot de passe" autofocus>
+      <button class="gate-btn" type="submit">Accéder</button>
+      <div class="gate-err" id="gateErr"></div>
+    </form>
+    <div class="gate-foot">onenara.com</div>
+  </div>
+</div>
+<script>
+(function(){
+  var PW="verlaine01", KEY="vgate_billboardverlainev1";
+  var gate=document.getElementById('gate');
+  function unlock(){try{sessionStorage.setItem(KEY,'ok');}catch(e){}gate.remove();document.body.classList.remove('gate-open');}
+  try{if(sessionStorage.getItem(KEY)==='ok'){unlock();return;}}catch(e){}
+  document.getElementById('gateForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var inp=document.getElementById('gateInput');
+    if(inp.value===PW){unlock();}
+    else{document.getElementById('gateErr').textContent='Mot de passe incorrect.';inp.value='';inp.focus();}
+  });
+})();
+</script>
 
 <nav class="nav">
   <div class="nav-in">
@@ -215,7 +260,7 @@ footer{background:#111;color:#8a8a8a;padding:48px 0;text-align:center}
     <div class="hero-meta">
       <div class="hm"><div class="hm-l">Annonceur</div><div class="hm-v">Groupe Verlaine</div></div>
       <div class="hm"><div class="hm-l">Format maître</div><div class="hm-v">12s · 3 offres été</div></div>
-      <div class="hm"><div class="hm-l">Version</div><div class="hm-v">v5</div></div>
+      <div class="hm"><div class="hm-l">Version</div><div class="hm-v">V1</div></div>
       <div class="hm"><div class="hm-l">Date</div><div class="hm-v">25 juin 2026</div></div>
     </div>
   </div>
@@ -449,7 +494,7 @@ footer{background:#111;color:#8a8a8a;padding:48px 0;text-align:center}
   <div class="ctn">
     <a class="logo-link f-logo-link" href="https://onenara.com" target="_blank" rel="noopener" aria-label="NARA, onenara.com"><img class="f-logo" src="media/nara-logo.png" alt="NARA" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'"><span class="logo-fb f-fb">NARA</span></a>
     <div class="f-sl">L'excellence créative, propulsée par l'IA et d'anciens CMO</div>
-    <div class="f-conf">Document confidentiel · Groupe Verlaine · <a href="https://onenara.com" target="_blank" rel="noopener">onenara.com/billboardverlaine</a></div>
+    <div class="f-conf">Document confidentiel · Groupe Verlaine · <a href="https://onenara.com" target="_blank" rel="noopener">onenara.com/billboardverlainev1</a></div>
   </div>
 </footer>
 
