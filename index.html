@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NARA · L'excellence créative, par l'IA et d'anciens CMO</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<meta name="description" content="NARA rend l'excellence créative fiable, mesurable et tenable dans le temps. Du brief au concept exécuté : créez, testez, décidez avec la confiance de la donnée, sur tous vos use cases. POC gratuit.">
+<meta name="description" content="NARA rend l'excellence créative fiable, mesurable et durable dans le temps. Du brief au concept exécuté : créez, testez, décidez avec la confiance de la donnée, sur tous vos use cases. POC gratuit.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 <style>
@@ -226,6 +226,26 @@ textarea.fi{resize:vertical;min-height:74px}
 .foot-sig em{color:var(--terra-lt);font-style:italic}
 .foot-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:28px;font-size:12px;color:rgba(255,255,255,.45)}
 .foot-meta .tag{color:rgba(255,255,255,.7)}
+
+/* CLIENTS */
+.clients{background:var(--cream-dk);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:clamp(56px,8vw,90px) 0}
+.clients .sh{text-align:center;max-width:800px;margin:0 auto}
+.clients-g{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:46px}
+.client{background:var(--white);border:1px solid var(--border);border-radius:18px;padding:34px 22px 30px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.client:hover{transform:translateY(-4px);border-color:var(--terra);box-shadow:0 16px 38px rgba(26,26,26,.08)}
+.client-ic{width:62px;height:62px;border-radius:50%;background:var(--terra-xlt);display:flex;align-items:center;justify-content:center;color:var(--terra);margin-bottom:8px}
+.client-ic svg{width:28px;height:28px;display:block}
+.client-sec{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--char);letter-spacing:-.01em}
+.client-uc{font-size:14px;color:var(--wg);line-height:1.55}
+@media(max-width:980px){.clients-g{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.clients-g{grid-template-columns:1fr}}
+
+/* CONVERGENCE (fond clair, surcharge des cartes .proof prevues pour fond sombre) */
+.conv{padding:var(--sp) 0}
+.conv .proof{background:var(--white);border:1px solid var(--border)}
+.conv .proof:hover{background:var(--cream);border-color:var(--terra);transform:translateY(-4px)}
+.conv .proof-n{color:var(--terra)}
+.conv .proof-h{color:var(--char)}
+.conv .proof-t{color:var(--wg)}
 </style>
 <style>
 .nav-logo{height:50px;width:auto;display:block}
@@ -293,7 +313,7 @@ html[data-lang="en"] .svgL.fr{display:none}
   <div class="ctn hero-in">
     <div class="hero-c">
       <div class="hero-ey ey"><span class="L fr">Social · Digital · TV · Visuel</span><span class="L en">Social · Digital · TV · Visual</span></div>
-      <h1 class="hero-t"><span class="L fr">NARA rend l'excellence créative fiable, mesurable et <em>tenable dans le temps.</em></span><span class="L en">NARA makes creative excellence reliable, measurable and <em>built to last.</em></span></h1>
+      <h1 class="hero-t"><span class="L fr">NARA rend l'excellence créative fiable, mesurable et <em>durable dans le temps.</em></span><span class="L en">NARA makes creative excellence reliable, measurable and <em>built to last.</em></span></h1>
       <p class="hero-sub"><span class="L fr">Du brief au concept exécuté : créez, testez, décidez avec la confiance de la donnée, sur tous vos use cases : social media, digital, TV, visuel.</span><span class="L en">From brief to finished concept: create, test, and greenlight with the confidence of data, across every use case: social media, digital, TV, visual.</span></p>
       <div class="hero-ctas">
         <a href="#poc" class="btn bp"><span class="L fr">Lancer un POC gratuit</span><span class="L en">Start a free POC</span>
@@ -355,11 +375,44 @@ html[data-lang="en"] .svgL.fr{display:none}
 </section>
 
 <!-- PROBLEM -->
+<!-- CLIENTS -->
+<section class="clients">
+  <div class="ctn">
+    <div class="sh aos">
+      <div class="ey"><span class="L fr">Nos clients</span><span class="L en">Our clients</span></div>
+      <h2 class="sh-t"><span class="L fr">De nombreuses marques, sur des use cases variés</span><span class="L en">Many brands, across varied use cases</span></h2>
+      <p class="sh-sub"><span class="L fr">NARA accompagne déjà des marques de l’énergie, de l’agroalimentaire, de la cosmétique et du luxe, sur l’ensemble de leurs use cases : TV, sponsoring, social, UGC, vidéos, visuels et bannières.</span><span class="L en">NARA already works with brands in energy, food, cosmetics and luxury, across all their use cases: TV, sponsorship, social, UGC, video, visuals and banners.</span></p>
+    </div>
+    <div class="clients-g aos">
+      <div class="client">
+        <div class="client-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
+        <div class="client-sec"><span class="L fr">Énergie</span><span class="L en">Energy</span></div>
+        <div class="client-uc"><span class="L fr">Campagne TV et sponsoring</span><span class="L en">TV campaign and sponsorship</span></div>
+      </div>
+      <div class="client">
+        <div class="client-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 13.47 20 4 20 4S10.53 4.57 6.05 8.05z"/></svg></div>
+        <div class="client-sec"><span class="L fr">Agroalimentaire</span><span class="L en">Food</span></div>
+        <div class="client-uc"><span class="L fr">Vidéos social media (UGC)</span><span class="L en">Social media videos (UGC)</span></div>
+      </div>
+      <div class="client">
+        <div class="client-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"/></svg></div>
+        <div class="client-sec"><span class="L fr">Cosmétique</span><span class="L en">Cosmetics</span></div>
+        <div class="client-uc"><span class="L fr">Visuels et bannières</span><span class="L en">Visuals and banners</span></div>
+      </div>
+      <div class="client">
+        <div class="client-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3 L18 3 L22 9 L12 21 L2 9 Z"/></svg></div>
+        <div class="client-sec"><span class="L fr">Luxe</span><span class="L en">Luxury</span></div>
+        <div class="client-uc"><span class="L fr">Vidéos social media et bannières</span><span class="L en">Social media videos and banners</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="problem" id="problem">
   <div class="ctn">
     <div class="sh aos">
       <div class="ey"><span class="L fr">Le défi</span><span class="L en">The challenge</span></div>
-      <h2 class="sh-t"><span class="L fr">L'excellence est facile <em>une fois par an</em>. Le défi, c'est de la tenir partout.</span><span class="L en">Excellence is easy <em>once a year</em>. The challenge is holding it everywhere.</span></h2>
+      <h2 class="sh-t"><span class="L fr">Le défi de l'excellence créative : sortir du <em>nivellement par le centre</em> propre aux IA</span><span class="L en">The creative excellence challenge: escaping the <em>regression to the mean</em> that AI defaults to</span></h2>
       <p class="sh-sub"><span class="L fr">Vos marques réclament toujours plus de social et de digital, et elles savent que la création reste le premier levier. Mais dès que le volume monte, la qualité décroche. Personne ne tient le niveau sur toute la cadence, faute de méthode.</span><span class="L en">Your brands demand more social and digital every month, and they know the creative is still the number one lever. But the moment volume rises, quality drops. Nobody holds the level across the full cadence, for lack of a method.</span></p>
     </div>
     <div class="problem-g">
@@ -386,6 +439,22 @@ html[data-lang="en"] .svgL.fr{display:none}
 </section>
 
 <!-- PROMISE -->
+<!-- CONVERGENCE -->
+<section class="conv" id="conv">
+  <div class="ctn">
+    <div class="sh aos">
+      <div class="ey"><span class="L fr">La réponse</span><span class="L en">The answer</span></div>
+      <h2 class="sh-t"><span class="L fr">Réunir trois expertises longtemps <em>silotées</em></span><span class="L en">Uniting three long-<em>siloed</em> disciplines</span></h2>
+      <p class="sh-sub"><span class="L fr">La rigueur des grands annonceurs, la créativité des agences, la mesure des instituts. NARA est le premier système à les combiner, calibré sur vos données, piloté par vous. C’est ce qui en fait une catégorie nouvelle.</span><span class="L en">The discipline of major advertisers, the creativity of agencies, the measurement of research institutes. NARA is the first system to combine them, calibrated on your data, driven by you. That is what makes it a new category.</span></p>
+    </div>
+    <div class="proofs">
+      <div class="proof aos"><div class="proof-n">01</div><div class="proof-h"><span class="L fr">Connaissance marque</span><span class="L en">Brand knowledge</span></div><div class="proof-t"><span class="L fr">La rigueur des grands annonceurs : qualité du brief, connaissance de la marque et de la cible, critères d’évaluation propres.</span><span class="L en">The discipline of major advertisers: brief quality, deep brand and audience knowledge, dedicated evaluation criteria.</span></div></div>
+      <div class="proof aos"><div class="proof-n">02</div><div class="proof-h"><span class="L fr">Créativité agence</span><span class="L en">Agency creativity</span></div><div class="proof-t"><span class="L fr">Stratégie créative, benchmarking sectoriel, talent narratif et diversité des territoires explorés.</span><span class="L en">Creative strategy, category benchmarking, narrative talent and breadth of territories explored.</span></div></div>
+      <div class="proof aos"><div class="proof-n">03</div><div class="proof-h"><span class="L fr">Mesure institut</span><span class="L en">Institute measurement</span></div><div class="proof-t"><span class="L fr">KPIs standardisés, connaissance consommateur, calibration sur résultats de ventes réels.</span><span class="L en">Standardised KPIs, consumer knowledge, calibration on real sales outcomes.</span></div></div>
+    </div>
+  </div>
+</section>
+
 <section class="promise" id="promise">
   <div class="ctn">
     <div class="sh aos">
@@ -454,25 +523,6 @@ html[data-lang="en"] .svgL.fr{display:none}
   </div>
 </section>
 
-<!-- WORKFLOW -->
-<section class="flow">
-  <div class="ctn">
-    <div class="sh aos">
-      <div class="ey"><span class="L fr">Comment ça marche</span><span class="L en">How it works</span></div>
-      <h2 class="sh-t"><span class="L fr">Du brief à la décision, un workflow qui tient le niveau</span><span class="L en">From brief to greenlight, a workflow that holds the level</span></h2>
-      <p class="sh-sub"><span class="L fr">Six étapes, toujours présentes, chacune modulable et activable indépendamment. Vous gardez la main, NARA porte la cadence.</span><span class="L en">Six steps, always present, each modular and independently switchable. You stay in control, NARA carries the cadence.</span></p>
-    </div>
-    <div class="flow-g">
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">1</div><div class="fc-who"><span class="L fr">Vous · 5 min</span><span class="L en">You · 5 min</span></div></div><div class="fc-t">Brief</div><div class="fc-d"><span class="L fr">Guidé par l'IA, méthode P&amp;G. Cible, insight, bénéfice, raison de croire, ton. NARA challenge chaque champ en temps réel.</span><span class="L en">AI-guided, P&amp;G method. Target, insight, benefit, reason to believe, tone. NARA challenges every field in real time.</span></div></div>
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">2</div><div class="fc-who">NARA</div></div><div class="fc-t"><span class="L fr">Stratégie</span><span class="L en">Strategy</span></div><div class="fc-d"><span class="L fr">Codes créatifs dominants, benchmarks de catégorie, tendances, opportunités de différenciation. Recommandation personnalisée.</span><span class="L en">Dominant creative codes, category benchmarks, trends, differentiation opportunities. A tailored recommendation.</span></div></div>
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">3</div><div class="fc-who">NARA</div></div><div class="fc-t"><span class="L fr">Idées</span><span class="L en">Ideas</span></div><div class="fc-d"><span class="L fr">Agents spécialisés 7×7. Plus de 20 concepts distincts avec synopsis et justification stratégique. Diversité vérifiable.</span><span class="L en">Specialised 7×7 agents. Over 20 distinct concepts with synopsis and strategic rationale. Verifiable diversity.</span></div></div>
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">4</div><div class="fc-who">NARA</div></div><div class="fc-t"><span class="L fr">Exécution</span><span class="L en">Execution</span></div><div class="fc-d"><span class="L fr">Scripts scène par scène, key visuals, déclinaisons sur tous les touchpoints. La cadence, sans la perte de niveau.</span><span class="L en">Scene-by-scene scripts, key visuals, variations across every touchpoint. Cadence, without losing the level.</span></div></div>
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">5</div><div class="fc-who">NARA</div></div><div class="fc-t"><span class="L fr">Évaluation</span><span class="L en">Evaluation</span></div><div class="fc-d"><span class="L fr">NaraScore sur 7 KPIs, 36 questions binaires. Recommandations d'optimisation applicables en un clic. La qualité, prédite avant le média.</span><span class="L en">NaraScore on 7 KPIs, 36 binary questions. Optimisation recommendations applied in one click. Quality, predicted before media.</span></div></div>
-      <div class="fc aos"><div class="fc-step"><div class="fc-num">6</div><div class="fc-who"><span class="L fr">Option</span><span class="L en">Optional</span></div></div><div class="fc-t">Production</div><div class="fc-d"><span class="L fr">De l'animatique à la production sociale entièrement IA, en option. Sur vos grands formats, l'IA prépare et valide, vous gardez la main.</span><span class="L en">From animatics to fully AI social production, optional. For your big formats, AI prepares and validates, you keep control.</span></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- DATA moat -->
 <section class="data" id="data">
   <div class="ctn data-in">
@@ -506,7 +556,7 @@ html[data-lang="en"] .svgL.fr{display:none}
       <div class="cmp-row"><div class="cmp-c lbl"><span class="L fr">Décision</span><span class="L en">Decision</span></div><div class="cmp-c basic"><span class="L fr">Pas de scoring fiable</span><span class="L en">No reliable scoring</span></div><div class="cmp-c nara"><span class="L fr">7 KPIs prédictifs</span><span class="L en">7 predictive KPIs</span></div></div>
       <div class="cmp-row"><div class="cmp-c lbl"><span class="L fr">Mémoire de marque</span><span class="L en">Brand memory</span></div><div class="cmp-c basic"><span class="L fr">Perdue à chaque session</span><span class="L en">Lost every session</span></div><div class="cmp-c nara"><span class="L fr">Propriétaire, enrichie</span><span class="L en">Proprietary, enriched</span></div></div>
       <div class="cmp-row"><div class="cmp-c lbl"><span class="L fr">Humain dans la boucle</span><span class="L en">Human in the loop</span></div><div class="cmp-c basic"><span class="L fr">Aucun</span><span class="L en">None</span></div><div class="cmp-c nara"><span class="L fr">Experts haut niveau</span><span class="L en">Top-tier experts</span></div></div>
-      <div class="cmp-row"><div class="cmp-c lbl"><span class="L fr">Confidentialité</span><span class="L en">Confidentiality</span></div><div class="cmp-c basic"><span class="L fr">Données réutilisées</span><span class="L en">Data reused</span></div><div class="cmp-c nara"><span class="L fr">Cloisonné, France, RGPD</span><span class="L en">Siloed, EU-hosted, GDPR</span></div></div>
+      <div class="cmp-row"><div class="cmp-c lbl"><span class="L fr">Confidentialité</span><span class="L en">Confidentiality</span></div><div class="cmp-c basic"><span class="L fr">Réutilisées pour l'entraînement</span><span class="L en">Reused for training</span></div><div class="cmp-c nara"><span class="L fr">Jamais d'entraînement, France, RGPD</span><span class="L en">Never trained on, EU, GDPR</span></div></div>
     </div>
   </div>
 </section>
@@ -596,7 +646,7 @@ if(btn){btn.addEventListener('click',()=>{document.getElementById('pocForm').sty
 <script>
 (function(){
  var TITLE={fr:"NARA · L'excellence créative, par l'IA et d'anciens CMO",en:"NARA · Creative Excellence, powered by AI and ex CMOs"};
- var DESC={fr:"NARA rend l'excellence créative fiable, mesurable et tenable dans le temps. Du brief au concept exécuté : créez, testez, décidez avec la confiance de la donnée, sur tous vos use cases. POC gratuit.",en:"NARA makes creative excellence reliable, measurable and built to last. From brief to finished concept: create, test, and greenlight with the confidence of data, across every use case. Free POC."};
+ var DESC={fr:"NARA rend l'excellence créative fiable, mesurable et durable dans le temps. Du brief au concept exécuté : créez, testez, décidez avec la confiance de la donnée, sur tous vos use cases. POC gratuit.",en:"NARA makes creative excellence reliable, measurable and built to last. From brief to finished concept: create, test, and greenlight with the confidence of data, across every use case. Free POC."};
  var root=document.documentElement, md=document.querySelector('meta[name="description"]');
  function setLang(l){
    root.setAttribute('data-lang',l); root.setAttribute('lang',l);
