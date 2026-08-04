@@ -138,11 +138,11 @@ html[data-lang="en"] .svgL.fr{display:none}
 .hero-claim strong{font-weight:600;color:var(--ink)}
 .hero-sub{font-size:15px;line-height:1.7;color:var(--muted);max-width:520px;margin-bottom:32px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
-.hero-proof{display:flex;align-items:stretch;gap:22px;flex-wrap:wrap}
-.hero-pm{font-size:13px;color:var(--muted);line-height:1.5}
+.hero-proof{display:flex;align-items:stretch;gap:18px;flex-wrap:nowrap}
+.hero-pm{font-size:13px;color:var(--muted);line-height:1.5;flex:1 1 0;min-width:0}
 .hero-pm strong{color:var(--ink);font-family:var(--fd);font-weight:600;display:block;font-size:19px}
-.hero-pd{width:1px;background:var(--line)}
-@media(max-width:900px){.hero-in{grid-template-columns:1fr;gap:44px}.quad-wrap{max-width:500px}}
+.hero-pd{width:1px;background:var(--line);flex:0 0 1px}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;gap:44px}.quad-wrap{max-width:500px}.hero-proof{flex-wrap:wrap}.hero-pm{flex:1 1 200px}}
 
 /* Quadrant */
 .quad-card{padding:24px 24px 20px}
@@ -318,7 +318,7 @@ textarea.fi{resize:vertical;min-height:74px}
         <div class="hero-pd"></div>
         <div class="hero-pm"><span class="L fr"><strong>NaraScore</strong>qualité prédite avant le média</span><span class="L en"><strong>NaraScore</strong>quality predicted before you spend</span></div>
         <div class="hero-pd"></div>
-        <div class="hero-pm"><span class="L fr"><strong>10 000+</strong>pubs analysées pour le benchmark</span><span class="L en"><strong>10,000+</strong>ads analysed for benchmarking</span></div>
+        <div class="hero-pm"><span class="L fr"><strong>Mémoire</strong>chaque campagne mesurée améliore la suivante</span><span class="L en"><strong>Memory</strong>each measured campaign improves the next</span></div>
       </div>
     </div>
 
@@ -337,15 +337,15 @@ textarea.fi{resize:vertical;min-height:74px}
             <line class="q-tradeoff" x1="92" y1="60" x2="380" y2="284"/>
             <g class="q-pt p1">
               <rect x="113" y="71" width="14" height="14" fill="#7E786D"/>
-              <text class="q-dotlabel mute svgL fr" x="120" y="58" text-anchor="middle">Le sur-mesure</text>
-              <text class="q-dotlabel mute svgL en" x="120" y="58" text-anchor="middle">Bespoke craft</text>
+              <text class="q-dotlabel mute svgL fr" x="120" y="58" text-anchor="middle">100 % humain</text>
+              <text class="q-dotlabel mute svgL en" x="120" y="58" text-anchor="middle">100% human</text>
               <text class="q-axis svgL fr" x="120" y="102" text-anchor="middle">brillant, mais une fois</text>
               <text class="q-axis svgL en" x="120" y="102" text-anchor="middle">brilliant, but once a year</text>
             </g>
             <g class="q-pt p2">
               <rect x="349" y="255" width="14" height="14" fill="#B7AEA4"/>
-              <text class="q-dotlabel mute svgL fr" x="356" y="290" text-anchor="middle">L'IA basique</text>
-              <text class="q-dotlabel mute svgL en" x="356" y="290" text-anchor="middle">Basic AI</text>
+              <text class="q-dotlabel mute svgL fr" x="356" y="290" text-anchor="middle">100 % IA</text>
+              <text class="q-dotlabel mute svgL en" x="356" y="290" text-anchor="middle">100% AI</text>
               <text class="q-axis svgL fr" x="356" y="246" text-anchor="middle">du volume sans l'âme</text>
               <text class="q-axis svgL en" x="356" y="246" text-anchor="middle">volume without the soul</text>
             </g>
@@ -353,6 +353,10 @@ textarea.fi{resize:vertical;min-height:74px}
               <rect x="344" y="62" width="24" height="24" fill="#E07830"/>
               <rect x="352" y="70" width="8" height="8" fill="#FFFFFF"/>
               <text class="q-dotlabel" x="356" y="50" text-anchor="middle" style="font-size:15px;fill:#A84F17;font-weight:600">NARA</text>
+              <text class="q-axis svgL fr" x="356" y="104" text-anchor="middle">expertise humaine</text>
+              <text class="q-axis svgL fr" x="356" y="118" text-anchor="middle">augmentée par l'IA</text>
+              <text class="q-axis svgL en" x="356" y="104" text-anchor="middle">human expertise</text>
+              <text class="q-axis svgL en" x="356" y="118" text-anchor="middle">augmented by AI</text>
             </g>
           </svg>
         </div>
