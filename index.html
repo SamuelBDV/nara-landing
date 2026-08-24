@@ -3,18 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NARA · L'excellence créative, fiable, mesurable, durable</title>
-<link rel="icon" type="image/png" href="/favicon.png">
-<meta name="description" content="Créez, évaluez et décidez des meilleures idées publicitaires. NARA rend l'excellence créative fiable, mesurable et durable. Le jugement d'anciens CMO, amplifié par l'intelligence artificielle.">
-<meta property="og:title" content="NARA · L'excellence créative, fiable, mesurable, durable">
-<meta property="og:description" content="Créez, évaluez et décidez des meilleures idées publicitaires. NARA rend l'excellence créative fiable, mesurable et durable. Le jugement d'anciens CMO, amplifié par l'intelligence artificielle.">
+<meta name="description" content="NARA : créez, évaluez et décidez des meilleures idées publicitaires. L'intelligence humaine augmentée par l'IA, en social comme en TV.">
+<!-- Open Graph (LinkedIn, Facebook, WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NARA">
+<meta property="og:title" content="NARA · Créez, évaluez et décidez des meilleures idées publicitaires">
+<meta property="og:description" content="L'intelligence humaine augmentée par l'IA. Le jugement d'anciens CMO, en social comme en TV.">
+<meta property="og:url" content="https://onenara.com/">
+<meta property="og:image" content="https://onenara.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NARA, l'excellence créative fiable, mesurable, durable">
 <meta property="og:locale" content="fr_FR">
-<meta name="twitter:title" content="NARA · L'excellence créative, fiable, mesurable, durable">
-<meta name="twitter:description" content="Créez, évaluez et décidez des meilleures idées publicitaires. NARA rend l'excellence créative fiable, mesurable et durable. Le jugement d'anciens CMO, amplifié par l'intelligence artificielle.">
-<link rel="canonical" href="https://onenara.com/">
-<link rel="alternate" hreflang="fr" href="https://onenara.com/">
-<link rel="alternate" hreflang="en" href="https://onenara.com/?lang=en">
-<link rel="alternate" hreflang="x-default" href="https://onenara.com/">
+<meta property="og:locale:alternate" content="en_US">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NARA · Créez, évaluez et décidez des meilleures idées publicitaires">
+<meta name="twitter:description" content="L'intelligence humaine augmentée par l'IA. Le jugement d'anciens CMO, en social comme en TV.">
+<meta name="twitter:image" content="https://onenara.com/og-image.png">
+<title>NARA · L'excellence créative, fiable, mesurable, durable</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -485,34 +495,12 @@ footer .sep{margin:0 8px;color:var(--hairline)}
 </footer>
 
 <script>
-var META_DESC = {
-  fr: "Créez, évaluez et décidez des meilleures idées publicitaires. NARA rend l'excellence créative fiable, mesurable et durable. Le jugement d'anciens CMO, amplifié par l'intelligence artificielle.",
-  en: "Create, evaluate and greenlight the best advertising ideas. NARA makes creative excellence reliable, measurable and built to last. The judgement of former CMOs, amplified by artificial intelligence."
-};
-function setMeta(l){
-  var d = META_DESC[l] || META_DESC.fr;
-  var md = document.querySelector('meta[name="description"]');
-  if (md) md.setAttribute('content', d);
-  document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach(function(el){
-    el.setAttribute('content', d);
-  });
-  var ogLoc = document.querySelector('meta[property="og:locale"]');
-  if (ogLoc) ogLoc.setAttribute('content', l === 'en' ? 'en_US' : 'fr_FR');
-}
 function setLang(l){
   document.body.classList.toggle('en', l==='en');
   document.documentElement.lang = l;
   document.getElementById('btn-fr').classList.toggle('on', l==='fr');
   document.getElementById('btn-en').classList.toggle('on', l==='en');
-  setMeta(l);
-  var url = new URL(location.href);
-  if (l === 'en') url.searchParams.set('lang', 'en');
-  else url.searchParams.delete('lang');
-  history.replaceState(null, '', url);
 }
-(function(){
-  if (new URLSearchParams(location.search).get('lang') === 'en') setLang('en');
-})();
 </script>
 </body>
 </html>
