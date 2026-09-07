@@ -4,7 +4,7 @@ Landing page statique de NARA, déployée sur **onenara.com** via **IONOS Deploy
 
 ## Structure
 
-- `index.html` — landing V2 bilingue (HTML/CSS/JS inline, logo en base64).
+- `index.html` — landing V3 bilingue (HTML/CSS/JS inline, logo en base64).
 - `og-image.png` — aperçu LinkedIn / Open Graph, 1200×630 (`https://onenara.com/og-image.png`).
 - `favicon.svg` / `favicon.png` — chevron terracotta, fond transparent.
 
