@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vingt idées publicitaires de niveau agence par brief, notées par le jugement d'anciens CMO. Sachez, avant de dépenser, lesquelles vont marcher. Social, TV, visuels.">
+<meta name="description" content="L'excellence créative, à chaque prise de parole. Générez des insights consommateurs, créez des idées calibrées sur votre marque, et sachez avant de dépenser lesquelles vont marcher. Social, TV, visuels.">
 <!-- Open Graph (LinkedIn, Facebook, WhatsApp) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NARA">
-<meta property="og:title" content="NARA · Créez, évaluez et décidez des meilleures idées publicitaires">
-<meta property="og:description" content="L'intelligence humaine augmentée par l'IA. Le jugement d'anciens CMO sur vos idées, avant de dépenser. Social, TV, visuels.">
+<meta property="og:title" content="NARA · L\'excellence créative, à chaque prise de parole">
+<meta property="og:description" content="L\'intelligence humaine augmentée par l\'IA. Des insights consommateurs en continu, des idées calibrées sur votre marque, un NaraScore avant de dépenser.">
 <meta property="og:url" content="https://onenara.com/">
 <meta property="og:image" content="https://onenara.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -18,10 +18,10 @@
 <meta property="og:locale:alternate" content="en_US">
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NARA · Créez, évaluez et décidez des meilleures idées publicitaires">
-<meta name="twitter:description" content="L'intelligence humaine augmentée par l'IA. Le jugement d'anciens CMO sur vos idées, avant de dépenser. Social, TV, visuels.">
+<meta name="twitter:title" content="NARA · L\'excellence créative, à chaque prise de parole">
+<meta name="twitter:description" content="L\'intelligence humaine augmentée par l\'IA. Des insights consommateurs en continu, des idées calibrées sur votre marque, un NaraScore avant de dépenser.">
 <meta name="twitter:image" content="https://onenara.com/og-image.png">
-<title>NARA · L'excellence créative, fiable, mesurable, durable</title>
+<title>NARA · L'excellence créative, à chaque prise de parole</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=20260914c">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260914c">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260914c">
@@ -191,6 +191,90 @@ footer .sep{margin:0 8px;color:var(--hairline)}
 @keyframes rise{to{opacity:1;transform:none}}
 .d1{animation-delay:.03s}.d2{animation-delay:.09s}.d3{animation-delay:.15s}.d4{animation-delay:.21s}
 @media(prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}*{transition:none!important}}
+
+/* ---- v6 : hero ajusté à l'écran ---- */
+.hero{padding:40px 0 44px;min-height:calc(100vh - 72px);min-height:calc(100svh - 72px);display:flex;align-items:center}
+.hero>.hero-grid{width:100%}
+.hero h1{font-size:clamp(32px,4.2vw,48px)}
+.concept-card{padding:20px 22px 16px}
+.cc-block-label{margin:11px 0 4px}
+.cc-syn{padding:10px 13px;font-size:12.5px}
+.cc-score{margin-top:13px;padding:11px 15px}
+.cc-subs{grid-template-columns:repeat(2,1fr);margin-top:8px}
+.cc-foot{margin-top:8px}
+@media(max-height:760px) and (min-width:941px){.cc-hook{font-size:14px}.cc-syn{font-size:12px;line-height:1.45}.hero .lede{margin-bottom:22px}}
+@media(max-width:940px){.hero{min-height:0;display:block}}
+/* ---- v6 : exemple TV ---- */
+.tv-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:0;padding:0;overflow:hidden}
+.tv-main{padding:30px 32px}
+.tv-side{background:var(--ink);color:var(--paper);padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.tv-formula{font-family:var(--font-display);font-style:italic;font-size:19px;line-height:1.4;margin:6px 0 18px}
+.tv-scenes{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.tv-scenes li{display:grid;grid-template-columns:34px 1fr;gap:10px;font-size:14px;color:var(--muted)}
+.tv-scenes b{font-family:var(--font-display);color:var(--terra-deep);font-size:15px}
+.tv-sign{font-family:var(--font-display);font-weight:800;font-size:22px;margin-top:18px}
+.tv-big{font-family:var(--font-display);font-weight:800;font-size:54px;line-height:1}
+.tv-big span{font-size:18px;color:#CFC9BD;font-weight:600}
+.tv-side .muted-l{font-size:12.5px;color:#CFC9BD}
+.tv-4f{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+.tv-4f div{border:1px solid #3A322A;border-radius:10px;padding:8px 10px;font-size:12px;color:#CFC9BD}
+.tv-4f b{display:block;color:var(--terra-light);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:840px){.tv-card{grid-template-columns:1fr}}
+/* ---- v6 : NaraScore ---- */
+.ns-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.ns-step .n{font-family:var(--font-display);font-weight:800;font-size:15px;color:var(--terra-deep)}
+@media(max-width:940px){.ns-steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.ns-steps{grid-template-columns:1fr}}
+.ns-formula{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin:30px 0 6px;font-family:var(--font-display);font-weight:800}
+.ns-formula .pill{background:var(--panel);box-shadow:var(--shadow-rest);border-radius:999px;padding:10px 20px;font-size:18px}
+.ns-formula .pill small{display:block;font-family:var(--font-body);font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.ns-formula .op{font-size:22px;color:var(--terra-deep)}
+.ns-formula .res{background:var(--ink);color:var(--paper)}
+.podium{display:grid;grid-template-columns:1fr 1.12fr 1fr;gap:16px;align-items:end;margin-top:36px}
+.pod{background:var(--panel);border-radius:var(--r);box-shadow:var(--shadow-rest);padding:20px 20px 18px;text-align:center}
+.pod.first{background:var(--ink);color:var(--paper);padding-top:28px;padding-bottom:26px}
+.pod .rk{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.pod.first .rk{color:var(--terra-light)}
+.pod .sc{font-family:var(--font-display);font-weight:800;font-size:42px;line-height:1.05;margin:6px 0}
+.pod .sc span{font-size:15px;color:var(--faint)}
+.pod.first .sc span{color:#CFC9BD}
+.pod .nm{font-family:var(--font-display);font-weight:700;font-size:16px}
+.pod .or{font-size:12px;color:var(--faint);margin-top:4px}
+.pod.first .or{color:#CFC9BD}
+@media(max-width:720px){.podium{grid-template-columns:1fr}}
+.rank-wrap{overflow-x:auto;margin-top:18px;background:var(--panel);border-radius:var(--r);box-shadow:var(--shadow-rest)}
+.rank{width:100%;border-collapse:collapse;min-width:680px;font-size:13.5px}
+.rank th{text-align:left;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);padding:14px 16px;border-bottom:1px solid var(--hairline)}
+.rank td{padding:11px 16px;border-bottom:1px solid var(--hairline);vertical-align:middle}
+.rank tr:last-child td{border-bottom:0}
+.rank .r{font-family:var(--font-display);font-weight:800;color:var(--terra-deep);width:36px}
+.rank .t{font-weight:600}
+.rank .o{font-size:11.5px;color:var(--faint);display:block;font-weight:400}
+.rank .bar{position:relative;height:8px;border-radius:4px;background:var(--hairline);width:110px;display:inline-block;vertical-align:middle;margin-right:8px}
+.rank .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--terra)}
+.rank .ns{font-family:var(--font-display);font-weight:800;font-size:16px}
+.verdict{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:4px 10px;white-space:nowrap}
+.v-ex{background:var(--ink);color:var(--paper)}
+.v-so{background:#E3EFE7;color:#24573A}
+.v-re{background:#F6ECD9;color:#7A5410}
+.v-ec{background:#F4E1DC;color:#8A3A28}
+.ns-proofs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+@media(max-width:940px){.ns-proofs{grid-template-columns:1fr 1fr}}
+.ns-proofs .num{font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1.05;margin-bottom:8px}
+.ext{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;margin-top:30px;background:var(--ink);color:var(--paper);border-radius:var(--r);padding:26px 30px}
+.ext .card-label{color:var(--terra-light);margin-bottom:4px}
+.ext .card-title{color:var(--paper);margin-bottom:4px}
+.ext .card-body{color:#CFC9BD}
+.ext .ico{width:52px;height:52px;border-radius:50%;background:var(--terra);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--ink);font-weight:800}
+/* ---- v6 : offres ---- */
+.offer{display:flex;flex-direction:column}
+.offer.dark{background:var(--ink)}
+.offer.dark .card-label{color:var(--terra-light)}
+.offer.dark .card-title{color:var(--paper)}
+.offer.dark .card-body{color:#CFC9BD}
+.offer ul{margin:14px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.offer.dark ul{color:#CFC9BD}
+.offer li{margin-bottom:5px}
 </style>
 </head>
 <body>
@@ -221,12 +305,12 @@ footer .sep{margin:0 8px;color:var(--hairline)}
     <span class="en">Social media · TV · Key visuals · Human intelligence augmented by AI</span>
   </p>
   <h1 class="rise d1">
-    <span class="fr">Créez, évaluez et <em>décidez</em> des meilleures idées publicitaires.</span>
-    <span class="en">Create, evaluate and <em>greenlight</em> the best advertising ideas.</span>
+    <span class="fr">L'excellence créative, à <em>chaque prise de parole</em>.</span>
+    <span class="en">Creative excellence, <em>every time your brand speaks</em>.</span>
   </h1>
   <p class="lede rise d2">
-    <span class="fr">Le jugement d'anciens CMO, amplifié par l'intelligence artificielle et indépendant de toute production et de tout média. Vous savez, avant de dépenser, quelles idées vont marcher.</span>
-    <span class="en">The judgement of former CMOs, amplified by artificial intelligence and independent of any production or media interest. You know, before you spend, which ideas will work.</span>
+    <span class="fr">Le jugement d'anciens CMO, amplifié par l'intelligence artificielle. Vous générez des insights consommateurs en continu, vous créez des idées calibrées sur votre marque, et vous savez avant de dépenser lesquelles vont marcher.</span>
+    <span class="en">The judgment of former CMOs, amplified by artificial intelligence. You generate consumer insights continuously, you create ideas calibrated on your brand, and you know before you spend which ones will work.</span>
   </p>
   <div class="ctas rise d3">
     <a class="btn btn-primary" href="#pilote">
@@ -252,27 +336,21 @@ footer .sep{margin:0 8px;color:var(--hairline)}
     </p>
     <p class="cc-block-label"><span class="fr">Concept</span><span class="en">Concept</span></p>
     <p class="cc-syn">
-      <span class="fr">La créatrice, avalée par une visio sans fin, ouvre la bouteille hors champ. Au « pschitt », cut sec : même tenue, même verre, mais terrasse au soleil. Une gorgée, un sourire. Texte final : « La pause tient dans un pschitt. »</span>
-      <span class="en">The creator, trapped in an endless video call, opens the bottle off-screen. On the “psshht”, hard cut: same outfit, same glass, but a sunlit terrace. One sip, one smile. End card: “The break fits in a psshht.”</span>
-    </p>
-    <p class="cc-block-label"><span class="fr">Tendance reprise</span><span class="en">Trend picked up</span></p>
-    <p class="cc-trend">
-      <span class="fr">Sound-switch : le décor change sur le son signature du produit. Collectée cette semaine, détournée dans les codes de la marque.</span>
-      <span class="en">Sound-switch: the scene flips on the product's signature sound. Collected this week, adapted to the brand's codes.</span>
+      <span class="fr">La créatrice, avalée par une visio sans fin, ouvre la bouteille hors champ. Au « pschitt », cut sec : même tenue, même verre, mais terrasse au soleil. Texte final : « La pause tient dans un pschitt. »</span>
+      <span class="en">The creator, trapped in an endless video call, opens the bottle off-screen. On the “psshht”, hard cut: same outfit, same glass, but a sunlit terrace. End card: “The break fits in a psshht.”</span>
     </p>
     <div class="cc-score">
-      <span class="cc-num">4.3<span> / 5</span></span>
-      <span class="cc-meta"><span class="fr">NaraScore de l'idée · n° 1 sur 9</span><span class="en">Idea NaraScore · #1 of 9</span></span>
-      <span class="cc-verdict"><span class="fr">Excellente, à produire</span><span class="en">Excellent, greenlight</span></span>
+      <span class="cc-num">86<span> / 100</span></span>
+      <span class="cc-meta"><span class="fr">NaraScore · n° 1 sur 9 pistes</span><span class="en">NaraScore · #1 of 9 routes</span></span>
+      <span class="cc-verdict"><span class="fr">Excellent, à produire</span><span class="en">Excellent, greenlight</span></span>
     </div>
     <div class="cc-subs">
-      <div class="cc-sub"><div class="v">5.0</div><div class="l"><span class="fr">Pouvoir d'arrêt</span><span class="en">Stopping power</span></div></div>
-      <div class="cc-sub"><div class="v">4.8</div><div class="l">Selling</div></div>
-      <div class="cc-sub"><div class="v">3.8</div><div class="l">Branding</div></div>
+      <div class="cc-sub"><div class="v">88</div><div class="l"><span class="fr">Impact</span><span class="en">Impact</span></div></div>
+      <div class="cc-sub"><div class="v">84</div><div class="l"><span class="fr">Conviction</span><span class="en">Conviction</span></div></div>
     </div>
     <p class="cc-foot">
-      <span class="fr">Marque démo · chaque concept sort avec son hook, son synopsis, son agent et son score détaillé.</span>
-      <span class="en">Demo brand · every concept ships with its hook, synopsis, agent and detailed score.</span>
+      <span class="fr">Marque démo · tendance sound-switch collectée cette semaine, détournée dans les codes de la marque.</span>
+      <span class="en">Demo brand · sound-switch trend collected this week, adapted to the brand's codes.</span>
     </p>
   </div>
 </div>
@@ -358,8 +436,8 @@ footer .sep{margin:0 8px;color:var(--hairline)}
     <span class="en">Three siloed disciplines, united in <em>one system</em>.</span>
   </h2>
   <p class="lede">
-    <span class="fr">Calibré sur vos données, piloté par vous. NARA ne vend ni média ni production : rien ne l'incite à laisser passer une idée moyenne.</span>
-    <span class="en">Calibrated on your data, driven by you. NARA sells neither media nor production: nothing pushes it to wave through an average idea.</span>
+    <span class="fr">Calibré sur vos données, piloté par vous. Le NaraScore ne conditionne jamais l'accès à la production, et notre rémunération ne varie jamais selon le verdict : rien ne nous incite à laisser passer une idée moyenne. C'est au contrat.</span>
+    <span class="en">Calibrated on your data, driven by you. NaraScore never gates access to production, and our fee never varies with the verdict: nothing pushes us to wave through an average idea. It is in the contract.</span>
   </p>
   <div class="model-wrap">
 <svg class="model-svg" viewBox="0 0 1000 306" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marque, création, mesure, mémoire">
@@ -450,6 +528,124 @@ footer .sep{margin:0 8px;color:var(--hairline)}
 <div class="shell"><div class="rule"></div></div>
 
 <!-- CE QUE VOUS OBTENEZ -->
+<!-- EXEMPLE TV -->
+<section class="shell">
+  <p class="eyebrow"><span class="fr">Un exemple TV</span><span class="en">A TV example</span></p>
+  <h2>
+    <span class="fr">Le niveau d'une grande campagne, <em>à chaque brief</em>.</span>
+    <span class="en">The standard of a flagship campaign, <em>on every brief</em>.</span>
+  </h2>
+  <p class="lede">
+    <span class="fr">Chaque brief produit des pistes de ce niveau, chacune avec son agent, son hook, son concept et son score.</span>
+    <span class="en">Every brief produces routes at this level, each with its agent, its hook, its concept and its score.</span>
+  </p>
+  <div class="panel tv-card" style="margin-top:34px">
+    <div class="tv-main">
+      <div class="cc-top" style="margin-bottom:4px">
+        <span class="cc-rank">1</span>
+        <p class="cc-title" style="font-size:26px"><span class="fr">Le calme</span><span class="en">Calm</span></p>
+        <span class="cc-agent"><span class="fr">Agent Benchmark</span><span class="en">Benchmark Agent</span></span>
+      </div>
+      <p class="card-label" style="margin:2px 0 14px;color:var(--faint)"><span class="fr">Film 30 secondes · assurance habitation · marque démo</span><span class="en">30-second film · home insurance · demo brand</span></p>
+      <p class="cc-block-label"><span class="fr">Hook d'ouverture</span><span class="en">Opening hook</span></p>
+      <p class="tv-formula" style="margin:0 0 6px"><span class="fr">Deux heures du matin, une voix affolée au téléphone : « Mamie… il y a de l'eau qui coule du plafond. »</span><span class="en">Two in the morning, a panicked voice on the phone: “Granny… there's water coming through the ceiling.”</span></p>
+      <p class="cc-block-label"><span class="fr">Concept</span><span class="en">Concept</span></p>
+      <p class="cc-syn" style="font-size:14px;line-height:1.6">
+        <span class="fr">Premier appartement, première nuit seule face à un dégât des eaux venu du voisin du dessus. La jeune femme n'appelle pas son assureur, elle appelle sa grand-mère. Celle-ci décroche aussitôt et, sans une once de panique, la guide pas à pas : couper l'eau, mettre les meubles à l'abri, prendre des photos, appeler le numéro d'assistance au dos du contrat. « Ils vont s'occuper de toi. » Au matin, tout est pris en charge. La petite-fille demande : « Comment tu savais tout ça ? » La grand-mère sourit : « Parce qu'une nuit de 1982, quelqu'un me l'a dit à moi aussi. » Flash-back : la grand-mère à vingt-cinq ans, pieds dans l'eau, au téléphone avec un conseiller qui lui parle exactement de la même voix.</span>
+        <span class="en">First flat, first night alone facing a leak from the neighbour upstairs. The young woman doesn't call her insurer, she calls her grandmother. Her grandmother picks up at once and, without a trace of panic, walks her through it step by step: turn off the water, move the furniture, take photos, call the assistance number on the back of the policy. “They'll take care of you.” By morning, everything is handled. The granddaughter asks: “How did you know all that?” Her grandmother smiles: “Because one night in 1982, someone told me too.” Flashback: the grandmother at twenty-five, feet in the water, on the phone with an adviser who speaks to her in exactly the same voice.</span>
+      </p>
+      <p class="card-label" style="margin:18px 0 0"><span class="fr">Texte final</span><span class="en">End card</span></p>
+      <p class="tv-sign" style="margin-top:4px"><span class="fr">« Le calme, ça se transmet. »</span><span class="en">“Calm gets passed on.”</span></p>
+    </div>
+    <div class="tv-side">
+      <p class="muted-l"><span class="fr">NaraScore · n° 1 sur 8 pistes</span><span class="en">NaraScore · #1 of 8 routes</span></p>
+      <div class="tv-big">86<span> / 100</span></div>
+      <span class="verdict" style="background:var(--terra);color:var(--ink);align-self:flex-start"><span class="fr">Excellent, à produire</span><span class="en">Excellent, greenlight</span></span>
+      <div class="cc-subs" style="border-top:1px solid #3A322A;margin-top:6px;padding-top:6px">
+        <div class="cc-sub"><div class="v">88</div><div class="l" style="color:#CFC9BD">Impact</div></div>
+        <div class="cc-sub" style="border-left-color:#3A322A"><div class="v">84</div><div class="l" style="color:#CFC9BD">Conviction</div></div>
+      </div>
+      <p class="cc-block-label" style="color:var(--terra-light);margin-top:10px"><span class="fr">Référence de catégorie</span><span class="en">Category reference</span></p>
+      <p class="muted-l" style="font-size:13.5px;line-height:1.55"><span class="fr">La transmission entre générations, appliquée au moment de vérité de l'assurance : le sinistre, vécu par une personne seule.</span><span class="en">Passing things down the generations, applied to insurance's moment of truth: a claim, lived by one person alone.</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="shell"><div class="rule"></div></div>
+
+<!-- NARASCORE -->
+<section class="shell" id="narascore">
+  <p class="eyebrow"><span class="fr">Le NaraScore</span><span class="en">NaraScore</span></p>
+  <h2>
+    <span class="fr">Savoir, <em>avant de dépenser</em>, quelles idées vont marcher.</span>
+    <span class="en">Know, <em>before you spend</em>, which ideas will work.</span>
+  </h2>
+  <p class="lede">
+    <span class="fr">Une note unique sur 100, qui combine à parts égales ce qu'une publicité laisse dans les mémoires et ce qu'elle fait faire. Toutes vos pistes sont classées sur la même grille, avec un verdict clair.</span>
+    <span class="en">A single score out of 100 that equally combines what an ad leaves in memory and what it makes people do. All your routes are ranked on the same grid, with a clear verdict.</span>
+  </p>
+  <div class="ns-formula" aria-label="Impact plus Conviction égale NaraScore">
+    <span class="pill"><small><span class="fr">long terme</span><span class="en">long term</span></small>Impact</span>
+    <span class="op">+</span>
+    <span class="pill"><small><span class="fr">court terme</span><span class="en">short term</span></small>Conviction</span>
+    <span class="op">=</span>
+    <span class="pill res"><small style="color:#CFC9BD"><span class="fr">à parts égales</span><span class="en">equally weighted</span></small>NaraScore</span>
+  </div>
+  <div class="podium" aria-label="Podium du classement">
+    <div class="pod"><p class="rk"><span class="fr">2e</span><span class="en">2nd</span></p><p class="sc">79<span> / 100</span></p><p class="nm"><span class="fr">Le voisin qui sait tout</span><span class="en">The know-it-all neighbour</span></p><p class="or"><span class="fr">Partenaire créatif</span><span class="en">Creative partner</span></p></div>
+    <div class="pod first"><p class="rk"><span class="fr">1er · à produire</span><span class="en">1st · greenlight</span></p><p class="sc">86<span> / 100</span></p><p class="nm"><span class="fr">Le calme</span><span class="en">Calm</span></p><p class="or"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></p></div>
+    <div class="pod"><p class="rk"><span class="fr">3e</span><span class="en">3rd</span></p><p class="sc">77<span> / 100</span></p><p class="nm"><span class="fr">La maison qui veille</span><span class="en">The house that keeps watch</span></p><p class="or"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></p></div>
+  </div>
+  <div class="rank-wrap">
+    <table class="rank">
+      <thead><tr><th>#</th><th><span class="fr">Piste</span><span class="en">Route</span></th><th>Impact</th><th>Conviction</th><th>NaraScore</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td class="r">1</td><td class="t">Le calme<span class="o"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></span></td>
+          <td><span class="bar"><i style="width:88%"></i></span>88</td><td><span class="bar"><i style="width:84%"></i></span>84</td>
+          <td class="ns">86</td><td><span class="verdict v-ex"><span class="fr">Excellent, à produire</span><span class="en">Excellent, greenlight</span></span></td></tr>
+        <tr><td class="r">2</td><td class="t">Le voisin qui sait tout<span class="o"><span class="fr">Partenaire créatif</span><span class="en">Creative partner</span></span></td>
+          <td><span class="bar"><i style="width:80%"></i></span>80</td><td><span class="bar"><i style="width:78%"></i></span>78</td>
+          <td class="ns">79</td><td><span class="verdict v-so"><span class="fr">Solide, au niveau requis</span><span class="en">Solid, meets the bar</span></span></td></tr>
+        <tr><td class="r">3</td><td class="t">La maison qui veille<span class="o"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></span></td>
+          <td><span class="bar"><i style="width:74%"></i></span>74</td><td><span class="bar"><i style="width:80%"></i></span>80</td>
+          <td class="ns">77</td><td><span class="verdict v-so"><span class="fr">Solide, au niveau requis</span><span class="en">Solid, meets the bar</span></span></td></tr>
+        <tr><td class="r">4</td><td class="t">Clés en main<span class="o"><span class="fr">Partenaire créatif</span><span class="en">Creative partner</span></span></td>
+          <td><span class="bar"><i style="width:70%"></i></span>70</td><td><span class="bar"><i style="width:76%"></i></span>76</td>
+          <td class="ns">73</td><td><span class="verdict v-so"><span class="fr">Solide, au niveau requis</span><span class="en">Solid, meets the bar</span></span></td></tr>
+        <tr><td class="r">5</td><td class="t">Le plombier du dimanche<span class="o"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></span></td>
+          <td><span class="bar"><i style="width:66%"></i></span>66</td><td><span class="bar"><i style="width:70%"></i></span>70</td>
+          <td class="ns">68</td><td><span class="verdict v-re"><span class="fr">À retravailler</span><span class="en">Rework</span></span></td></tr>
+        <tr><td class="r">6</td><td class="t">Tout est sous contrôle<span class="o"><span class="fr">Partenaire créatif</span><span class="en">Creative partner</span></span></td>
+          <td><span class="bar"><i style="width:52%"></i></span>52</td><td><span class="bar"><i style="width:74%"></i></span>74</td>
+          <td class="ns">63</td><td><span class="verdict v-re"><span class="fr">À retravailler</span><span class="en">Rework</span></span></td></tr>
+        <tr><td class="r">7</td><td class="t">Maison témoin<span class="o"><span class="fr">Créé par NARA</span><span class="en">Created by NARA</span></span></td>
+          <td><span class="bar"><i style="width:60%"></i></span>60</td><td><span class="bar"><i style="width:58%"></i></span>58</td>
+          <td class="ns">59</td><td><span class="verdict v-re"><span class="fr">À retravailler</span><span class="en">Rework</span></span></td></tr>
+        <tr><td class="r">8</td><td class="t">Protection totale<span class="o"><span class="fr">Partenaire créatif</span><span class="en">Creative partner</span></span></td>
+          <td><span class="bar"><i style="width:38%"></i></span>38</td><td><span class="bar"><i style="width:56%"></i></span>56</td>
+          <td class="ns">47</td><td><span class="verdict v-ec"><span class="fr">À écarter</span><span class="en">Drop</span></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="hint" style="margin-top:12px"><span class="fr">Marque démo · classement de huit pistes TV, dont quatre fournies par des partenaires créatifs.</span><span class="en">Demo brand · ranking of eight TV routes, four of them supplied by creative partners.</span></p>
+
+  <div class="ext">
+    <div class="ico">↗</div>
+    <div>
+      <p class="card-label"><span class="fr">Pré-test de films externes</span><span class="en">Pre-testing external films</span></p>
+      <p class="card-title"><span class="fr">Les films de vos partenaires créatifs passent sur la même grille.</span><span class="en">Your creative partners' films go through the same grid.</span></p>
+      <p class="card-body"><span class="fr">Script, storyboard, animatique ou film fini : vous chargez n'importe quelle publicité et vous la comparez aux autres, sur les mêmes critères. Un même langage pour trancher en comité.</span><span class="en">Script, storyboard, animatic or finished film: upload any ad and compare it with the others, on the same criteria. One shared language to decide in committee.</span></p>
+    </div>
+  </div>
+
+  <p class="lede" style="margin-top:30px;max-width:none">
+    <span class="fr">Les détails méthodologiques et les résultats de calibration sont présentés lors d'un <a href="#pilote" style="color:var(--terra-deep);font-weight:600">call de présentation</a>.</span>
+    <span class="en">Methodological details and calibration results are presented during an <a href="#pilote" style="color:var(--terra-deep);font-weight:600">introductory call</a>.</span>
+  </p>
+</section>
+
+<div class="shell"><div class="rule"></div></div>
+
 <section class="shell">
   <p class="eyebrow"><span class="fr">Ce que vous obtenez</span><span class="en">What you get</span></p>
   <h2>
@@ -460,7 +656,7 @@ footer .sep{margin:0 8px;color:var(--hairline)}
     <div class="panel">
       <p class="card-label"><span class="fr">Décision</span><span class="en">Decision</span></p>
       <p class="card-title"><span class="fr">Le NaraScore, avant de produire</span><span class="en">NaraScore, before production</span></p>
-      <p class="card-body"><span class="fr">Chaque piste évaluée sur une grille commune, calibrée sur vos propres campagnes dès le premier mois. Un même langage pour comparer les pistes et choisir en connaissance de cause, avant d'engager le budget.</span><span class="en">Every route scored on a shared grid, calibrated on your own campaigns from the first month. A shared language to compare routes and decide with full knowledge, before committing budget.</span></p>
+      <p class="card-body"><span class="fr">Chaque piste évaluée sur une grille commune, qui se recalibre ensuite sur vos propres résultats. Un même langage pour comparer les pistes et choisir en connaissance de cause, avant d'engager le budget.</span><span class="en">Every route scored on a shared grid, which then recalibrates on your own results. A shared language to compare routes and decide with full knowledge, before committing budget.</span></p>
     </div>
     <div class="panel">
       <p class="card-label"><span class="fr">Différenciation</span><span class="en">Differentiation</span></p>
@@ -483,6 +679,77 @@ footer .sep{margin:0 8px;color:var(--hairline)}
 <div class="shell"><div class="rule"></div></div>
 
 <!-- USE CASES -->
+<!-- INSIGHTS -->
+<section class="shell" id="insights">
+  <p class="eyebrow"><span class="fr">Générez des insights</span><span class="en">Generate insights</span></p>
+  <h2>
+    <span class="fr">Interrogez vos consommateurs <em>quand vous en avez besoin</em>.</span>
+    <span class="en">Ask your consumers <em>whenever you need to</em>.</span>
+  </h2>
+  <p class="lede">
+    <span class="fr">Sur la marque, le produit, une promotion, votre site, ou la communication en amont du brief. Un panel de mille profils, des groupes de huit participants simulés, une séance en quelques minutes, dans chacun de vos marchés.</span>
+    <span class="en">On the brand, the product, a promotion, your website, or communication ahead of the brief. A panel of a thousand profiles, groups of eight simulated participants, a session in minutes, in each of your markets.</span>
+  </p>
+  <div class="grid grid-3" style="margin-top:34px">
+    <div class="panel">
+      <p class="card-label"><span class="fr">Un vrai débat</span><span class="en">A real debate</span></p>
+      <p class="card-title"><span class="fr">Un groupe qui se contredit</span><span class="en">A group that disagrees</span></p>
+      <p class="card-body"><span class="fr">Huit profils volontairement contrastés et un modérateur qui cherche l'objection plutôt que le consensus. Chaque séance affiche sa propre mesure de qualité.</span><span class="en">Eight deliberately contrasted profiles and a moderator that hunts for objections rather than consensus. Each session displays its own quality measure.</span></p>
+    </div>
+    <div class="panel">
+      <p class="card-label"><span class="fr">Ancré dans le réel</span><span class="en">Grounded in reality</span></p>
+      <p class="card-title"><span class="fr">Rien ne s'invente</span><span class="en">Nothing is made up</span></p>
+      <p class="card-body"><span class="fr">Un participant ne peut citer une marque, une enseigne ou un prix que s'ils figurent dans le dossier de marché. Vos études d'usage et vos baromètres ajustent le panel.</span><span class="en">A participant may only mention a brand, a retailer or a price if it appears in the market file. Your usage studies and brand trackers adjust the panel.</span></p>
+    </div>
+    <div class="panel">
+      <p class="card-label"><span class="fr">Directement utilisable</span><span class="en">Ready to use</span></p>
+      <p class="card-title"><span class="fr">Des insights, pas un compte rendu</span><span class="en">Insights, not a write-up</span></p>
+      <p class="card-body"><span class="fr">Une tension, la vérité terrain qui l'explique, l'opportunité pour la marque, et les prises de parole qui la fondent. Un insight validé part nourrir le brief créatif.</span><span class="en">A tension, the ground truth behind it, the opportunity for the brand, and the turns of speech that support it. A validated insight feeds straight into the creative brief.</span></p>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:18px"><span class="fr">Participants simulés, mention portée sur chaque restitution. Aucun pourcentage ne sort d'un groupe de huit : les chiffres relèvent du pré-test.</span><span class="en">Simulated participants, stated on every output. No percentage ever comes out of a group of eight: figures belong to pre-testing.</span></p>
+</section>
+
+<div class="shell"><div class="rule"></div></div>
+
+<!-- OFFRE -->
+<section class="shell" id="offre">
+  <p class="eyebrow"><span class="fr">L'offre</span><span class="en">The offer</span></p>
+  <h2>
+    <span class="fr">Deux façons d'entrer, <em>un seul système</em>.</span>
+    <span class="en">Two ways in, <em>one single system</em>.</span>
+  </h2>
+  <p class="lede">
+    <span class="fr">Vous commencez par la création ou par l'écoute, selon ce qui presse. Ce que vous apprenez d'un côté alimente l'autre, sans paramétrage et sans ressaisie.</span>
+    <span class="en">Start with creation or with listening, depending on what is urgent. What you learn on one side feeds the other, with no setup and no re-entry.</span>
+  </p>
+  <div class="grid grid-2" style="margin-top:34px">
+    <div class="panel offer">
+      <p class="card-label">NARA Studios</p>
+      <p class="card-title" style="font-size:22px"><span class="fr">L'excellence créative, à chaque prise de parole</span><span class="en">Creative excellence, every time your brand speaks</span></p>
+      <p class="card-body"><span class="fr">Création et déclinaison d'idées en social, TV et visuels.</span><span class="en">Creation and adaptation of ideas across social, TV and key visuals.</span></p>
+      <ul>
+        <li><span class="fr">Concepts, scripts, storyboards, animatiques</span><span class="en">Concepts, scripts, storyboards, animatics</span></li>
+        <li><span class="fr">NaraScore sur chaque piste</span><span class="en">NaraScore on every route</span></li>
+        <li><span class="fr">Production en option, jamais en condition</span><span class="en">Production optional, never a condition</span></li>
+      </ul>
+    </div>
+    <div class="panel offer dark">
+      <p class="card-label">NARA Insights</p>
+      <p class="card-title" style="font-size:22px"><span class="fr">Vos consommateurs, disponibles en permanence</span><span class="en">Your consumers, available at all times</span></p>
+      <p class="card-body"><span class="fr">Groupes consommateurs et pré-test publicitaire, y compris des films de vos partenaires.</span><span class="en">Consumer groups and ad pre-testing, including your partners' films.</span></p>
+      <ul>
+        <li><span class="fr">Groupes consommateurs illimités</span><span class="en">Unlimited consumer groups</span></li>
+        <li><span class="fr">Pré-test NaraScore de tout film, interne ou externe</span><span class="en">NaraScore pre-test of any film, internal or external</span></li>
+        <li><span class="fr">Ancré sur vos études et votre marché</span><span class="en">Grounded in your studies and your market</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:18px"><span class="fr">Abonnement par marque et par pays, usage illimité. Jamais de facturation au concept, au test ni à la séance.</span><span class="en">Subscription per brand and per country, unlimited use. Never billed per concept, per test or per session.</span></p>
+</section>
+
+<div class="shell"><div class="rule"></div></div>
+
 <section class="shell">
   <p class="eyebrow"><span class="fr">Les use cases</span><span class="en">The use cases</span></p>
   <h2>
@@ -506,7 +773,7 @@ footer .sep{margin:0 8px;color:var(--hairline)}
         <div>
           <p class="card-title"><span class="fr">TV et vidéo longue</span><span class="en">TV and long-form video</span></p>
           <p class="card-body"><span class="fr">Du brief au storyboard scoré : scripts, planches, animatique, chaque piste évaluée sur la grille NaraScore avant la production.</span><span class="en">From brief to scored storyboard: scripts, boards, animatics, each route scored on the NaraScore grid before production.</span></p>
-          <p class="hint uc-meta"><span class="fr">Grille calibrée sur vos campagnes, dès le premier mois.</span><span class="en">Grid calibrated on your campaigns, from the first month.</span></p>
+          <p class="hint uc-meta"><span class="fr">Vos films et ceux de vos partenaires, sur la même grille.</span><span class="en">Your films and your partners' films, on the same grid.</span></p>
         </div>
       </div>
     </div>
